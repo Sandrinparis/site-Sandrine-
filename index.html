@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sandrine Paris | Profil</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f12;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.75)),
+        linear-gradient(135deg, #3b2337, #111116);
+    }
+
+    .hero {
+      max-width: 700px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 7px 16px;
+      border: 1px solid #d8a7c7;
+      border-radius: 30px;
+      color: #f0c9df;
+      font-size: 13px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 52px;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #dddddd;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      background: #d8a7c7;
+      color: #181018;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-weight: bold;
+      margin: 6px;
+      transition: .3s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #f0c9df;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .about {
+      background: #17171c;
+      border-radius: 20px;
+      padding: 35px;
+      text-align: center;
+      color: #dddddd;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .photo {
+      height: 320px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #352636, #19191e);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      overflow: hidden;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .card {
+      background: #17171c;
+      padding: 25px;
+      border-radius: 18px;
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #f0c9df;
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      text-align: center;
+      background: #17171c;
+      border-radius: 20px;
+      padding: 45px 20px;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      color: #dddddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #888;
+      font-size: 13px;
+      border-top: 1px solid #29292f;
+    }
+
+    @media (max-width: 700px) {
+      h1 {
+        font-size: 38px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .photo {
+        height: 380px;
+      }
+
+      .info {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 50px 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+
+      <div class="badge">PROFIL ADULTE · 18+</div>
+
+      <h1>Sandrine Paris</h1>
+
+      <p class="subtitle">
+        Élégance, discrétion et moments de compagnie à Paris.
+      </p>
+
+      <a class="button" href="#contact">
+        Me contacter
+      </a>
+
+    </div>
+  </header>
+
+
+  <section>
+
+    <h2 class="title">À propos</h2>
+
+    <div class="about">
+      <p>
+        Bienvenue sur mon espace personnel.
+        Je suis Sandrine, basée à Paris.
+        Je privilégie les échanges respectueux,
+        la discrétion et une communication claire.
+      </p>
+
+      <br>
+
+      <p>
+        Pour toute demande ou prise de contact,
+        merci d'utiliser les coordonnées indiquées
+        ci-dessous.
+      </p>
+    </div>
+
+  </section>
+
+
+  <section>
+
+    <h2 class="title">Galerie</h2>
+
+    <div class="gallery">
+
+      <div class="photo">
+        <span>Photo 1</span>
+      </div>
+
+      <div class="photo">
+        <span>Photo 2</span>
+      </div>
+
+      <div class="photo">
+        <span>Photo 3</span>
+      </div>
+
+      <div class="photo">
+        <span>Photo 4</span>
+      </div>
+
+      <div class="photo">
+        <span>Photo 5</span>
+      </div>
+
+      <div class="photo">
+        <span>Photo 6</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section>
+
+    <h2 class="title">Informations</h2>
+
+    <div class="info">
+
+      <div class="card">
+        <h3>Localisation</h3>
+        <p>Paris, France</p>
+      </div>
+
+      <div class="card">
+        <h3>Disponibilité</h3>
+        <p>Sur rendez-vous</p>
+      </div>
+
+      <div class="card">
+        <h3>Échanges</h3>
+        <p>Discrets et respectueux</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="contact">
+
+    <div class="contact">
+
+      <h2 class="title">Contact</h2>
+
+      <p>
+        Pour me contacter, utilisez l'une des coordonnées
+        ci-dessous.
+      </p>
+
+      <p>
+        <strong>Email :</strong>
+        sandrinep28084@gmail.com
+      </p>
+
+      <p>
+        <strong>Téléphone :</strong>
+        +33 7 57 82 00 10
+      </p>
+
+      <br>
+
+      <a
+        class="button"
+        href="mailto:sandrinep28084@gmail.com">
+        Envoyer un email
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+
+    © 2026 Sandrine Paris · Profil réservé aux adultes de 18 ans et plus.
+
+  </footer>
+
+</body>
+</html>
