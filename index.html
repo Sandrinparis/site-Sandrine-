@@ -1,331 +1,692 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Sandrine Paris | Profil</title>
+    <title>Sandrine Paris | Profil personnel</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    <meta name="description"
+          content="Découvrez le profil de Sandrine à Paris, sa galerie et ses informations de contact.">
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0f0f12;
-      color: #ffffff;
-      line-height: 1.6;
-    }
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    header {
-      min-height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
-      background:
-        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.75)),
-        linear-gradient(135deg, #3b2337, #111116);
-    }
+        html {
+            scroll-behavior: smooth;
+        }
 
-    .hero {
-      max-width: 700px;
-    }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0b0f;
+            color: #ffffff;
+            line-height: 1.6;
+        }
 
-    .badge {
-      display: inline-block;
-      padding: 7px 16px;
-      border: 1px solid #d8a7c7;
-      border-radius: 30px;
-      color: #f0c9df;
-      font-size: 13px;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
-    }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
 
-    h1 {
-      font-size: 52px;
-      margin-bottom: 15px;
-      letter-spacing: 1px;
-    }
+        /* NAVIGATION */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(11, 11, 15, 0.94);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
 
-    .subtitle {
-      font-size: 20px;
-      color: #dddddd;
-      margin-bottom: 30px;
-    }
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    .button {
-      display: inline-block;
-      text-decoration: none;
-      background: #d8a7c7;
-      color: #181018;
-      padding: 14px 28px;
-      border-radius: 30px;
-      font-weight: bold;
-      margin: 6px;
-      transition: .3s;
-    }
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
 
-    .button:hover {
-      transform: translateY(-2px);
-      background: #f0c9df;
-    }
+        .logo span {
+            color: #e6a8cc;
+        }
 
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 70px 20px;
-    }
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            font-size: 14px;
+        }
 
-    .title {
-      text-align: center;
-      font-size: 32px;
-      margin-bottom: 35px;
-    }
+        .nav-links a:hover {
+            color: #e6a8cc;
+        }
 
-    .about {
-      background: #17171c;
-      border-radius: 20px;
-      padding: 35px;
-      text-align: center;
-      color: #dddddd;
-    }
+        /* ACCUEIL */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 20px 80px;
+            background:
+                radial-gradient(circle at 50% 30%,
+                #392a38 0%,
+                #17131b 35%,
+                #0b0b0f 75%);
+        }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
-    }
+        .hero-content {
+            max-width: 850px;
+        }
 
-    .photo1 {
-      height: 320px;
-      border-radius: 16px;
-      background: linear-gradient(135deg, #352636, #19191e);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #aaa;
-      overflow: hidden;
-    }
+        .badge {
+            display: inline-block;
+            border: 1px solid #e6a8cc;
+            color: #e6a8cc;
+            padding: 8px 22px;
+            border-radius: 40px;
+            font-size: 13px;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+        }
 
-    .photo2 img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+        h1 {
+            font-size: clamp(48px, 10vw, 90px);
+            line-height: 1;
+            margin-bottom: 25px;
+            letter-spacing: -2px;
+        }
 
-    .info {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
-    }
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            font-size: 20px;
+            color: #d0cbd0;
+        }
 
-    .card {
-      background: #17171c;
-      padding: 25px;
-      border-radius: 18px;
-      text-align: center;
-    }
+        .buttons {
+            margin-top: 35px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
 
-    .card h3 {
-      color: #f0c9df;
-      margin-bottom: 8px;
-    }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 35px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-    .contact {
-      text-align: center;
-      background: #17171c;
-      border-radius: 20px;
-      padding: 45px 20px;
-    }
+        .primary {
+            background: #e6a8cc;
+            color: #171019;
+        }
 
-    .contact p {
-      margin: 10px 0;
-      color: #dddddd;
-    }
+        .primary:hover {
+            transform: translateY(-3px);
+            background: #f0b9d9;
+        }
 
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      color: #888;
-      font-size: 13px;
-      border-top: 1px solid #29292f;
-    }
+        .secondary {
+            border: 1px solid #777;
+            color: white;
+        }
 
-    @media (max-width: 700px) {
-      h1 {
-        font-size: 38px;
-      }
+        .secondary:hover {
+            border-color: #e6a8cc;
+            color: #e6a8cc;
+        }
 
-      .gallery {
-        grid-template-columns: 1fr;
-      }
+        /* SECTIONS */
+        section {
+            padding: 90px 20px;
+        }
 
-      .photo 3 {
-        height: 380px;
-      }
+        .container {
+            max-width: 1050px;
+            margin: auto;
+        }
 
-      .info {
-        grid-template-columns: 1fr;
-      }
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-      section {
-        padding: 50px 15px;
-      }
-    }
-  </style>
+        .section-title h2 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #aaa;
+        }
+
+        /* À PROPOS */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text {
+            color: #d1ced1;
+            font-size: 17px;
+        }
+
+        .about-card {
+            background: #15151b;
+            border: 1px solid #292932;
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        .about-card div {
+            padding: 15px 0;
+            border-bottom: 1px solid #292932;
+        }
+
+        .about-card div:last-child {
+            border-bottom: none;
+        }
+
+        .about-card strong {
+            color: #e6a8cc;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* GALERIE */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .gallery-item {
+            aspect-ratio: 3 / 4;
+            border-radius: 18px;
+            overflow: hidden;
+            background: #191920;
+            border: 1px solid #292932;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* INFORMATIONS */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .info-card {
+            background: #15151b;
+            border: 1px solid #292932;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .info-icon {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .info-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .info-card p {
+            color: #aaa;
+        }
+
+        /* CONTACT */
+        .contact {
+            text-align: center;
+            background: #121016;
+        }
+
+        .contact-box {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .contact-box p {
+            color: #bbb;
+            margin: 20px 0 30px;
+        }
+
+        /* PIED DE PAGE */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: #08080b;
+            color: #777;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 750px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                min-height: 90vh;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 70px 18px;
+            }
+
+            .section-title h2 {
+                font-size: 34px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-  <header>
-    <div class="hero">
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-container">
 
-      <div class="badge">PROFIL ADULTE · 18+</div>
+            <div class="logo">
+                Sandrine <span>Paris</span>
+            </div>
 
-      <h1>Sandrine Paris</h1>
+            <div class="nav-links">
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#galerie">Galerie</a>
+                <a href="#contact">Contact</a>
+            </div>
 
-      <p class="subtitle">
-        Élégance, discrétion et moments de compagnie à Paris.
-      </p>
-
-      <a class="button" href="#contact">
-        Me contacter
-      </a>
-
-    </div>
-  </header>
-
-
-  <section>
-
-    <h2 class="title">À propos</h2>
-
-    <div class="about">
-      <p>
-        Bienvenue sur mon espace personnel.
-        Je suis Sandrine, basée à Paris.
-        Je privilégie les échanges respectueux,
-        la discrétion et une communication claire.
-      </p>
-
-      <br>
-
-      <p>
-        Pour toute demande ou prise de contact,
-        merci d'utiliser les coordonnées indiquées
-        ci-dessous.
-      </p>
-    </div>
-
-  </section>
+        </div>
+    </nav>
 
 
-  <section>
+    <!-- ACCUEIL -->
+    <section class="hero" id="accueil">
 
-    <h2 class="title">Galerie</h2>
+        <div class="hero-content">
 
-    <div class="gallery">
+            <div class="badge">
+                PROFIL ADULTE · 18+
+            </div>
 
-      <div class="photo">
-        <span>Photo 1</span>
-      </div>
+            <h1>Sandrine Paris</h1>
 
-      <div class="photo">
-        <span>Photo 2</span>
-      </div>
+            <p>
+                Élégance, discrétion et personnalité.
+                Découvrez mon univers et mes informations personnelles.
+            </p>
 
-      <div class="photo">
-        <span>Photo 3</span>
-      </div>
+            <div class="buttons">
 
-      <div class="photo">
-        <span>Photo 4</span>
-      </div>
+                <a href="#contact" class="button primary">
+                    Me contacter
+                </a>
 
-      <div class="photo">
-        <span>Photo 5</span>
-      </div>
+                <a href="#apropos" class="button secondary">
+                    Découvrir mon profil
+                </a>
 
-      <div class="photo">
-        <span>Photo 6</span>
-      </div>
+            </div>
 
-    </div>
+        </div>
 
-  </section>
+    </section>
 
 
-  <section>
+    <!-- À PROPOS -->
+    <section id="apropos">
 
-    <h2 class="title">Informations</h2>
+        <div class="container">
 
-    <div class="info">
+            <div class="section-title">
 
-      <div class="card">
-        <h3>Localisation</h3>
-        <p>Paris, France</p>
-      </div>
+                <h2>À propos</h2>
 
-      <div class="card">
-        <h3>Disponibilité</h3>
-        <p>Sur rendez-vous</p>
-      </div>
+                <p>
+                    Quelques informations sur mon profil
+                </p>
 
-      <div class="card">
-        <h3>Échanges</h3>
-        <p>Discrets et respectueux</p>
-      </div>
-
-    </div>
-
-  </section>
+            </div>
 
 
-  <section id="contact">
+            <div class="about-grid">
 
-    <div class="contact">
+                <div class="about-text">
 
-      <h2 class="title">Contact</h2>
+                    <p>
+                        Bienvenue sur mon espace personnel.
+                    </p>
 
-      <p>
-        Pour me contacter, utilisez l'une des coordonnées
-        ci-dessous.
-      </p>
+                    <br>
 
-      <p>
-        <strong>Email :</strong>
-        sandrinep28084@gmail.com
-      </p>
+                    <p>
+                        Je suis Sandrine, basée à Paris.
+                        Je privilégie les échanges respectueux,
+                        la discrétion et une communication claire.
+                    </p>
 
-      <p>
-        <strong>Téléphone :</strong>
-        +33 7 57 82 00 10
-      </p>
+                    <br>
 
-      <br>
+                    <p>
+                        Pour toute demande sérieuse,
+                        vous pouvez utiliser les coordonnées
+                        indiquées dans la section contact.
+                    </p>
 
-      <a
-        class="button"
-        href="mailto:sandrinep28084@gmail.com">
-        Envoyer un email
-      </a>
-
-    </div>
-
-  </section>
+                </div>
 
 
-  <footer>
+                <div class="about-card">
 
-    © 2026 Sandrine Paris · Profil réservé aux adultes de 18 ans et plus.
+                    <div>
+                        <strong>Nom</strong>
+                        Sandrine Paris
+                    </div>
 
-  </footer>
+                    <div>
+                        <strong>Localisation</strong>
+                        Paris, France
+                    </div>
+
+                    <div>
+                        <strong>Profil</strong>
+                        Personnel et privé
+                    </div>
+
+                    <div>
+                        <strong>Disponibilité</strong>
+                        24h/24
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALERIE -->
+    <section id="galerie">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Galerie</h2>
+
+                <p>
+                    Quelques photos
+                </p>
+
+            </div>
+
+
+            <div class="gallery">
+
+
+                <!-- PHOTO 1 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="photo1.jpg"
+                        alt="Photo de Sandrine">
+
+                </div>
+
+
+                <!-- PHOTO 2 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="photo2.jpg"
+                        alt="Photo de Sandrine">
+
+                </div>
+
+
+                <!-- PHOTO 3 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="photo 3.jpg"
+                        alt="Photo de Sandrine">
+
+                </div>
+
+
+                <!-- PHOTO 4 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="photo4.jpg"
+                        alt="Photo de Sandrine">
+
+                </div>
+
+
+                <!-- PHOTO 5 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="photo 5.jpg"
+                        alt="Photo de Sandrine">
+
+                </div>
+
+
+                <!-- PHOTO 6 -->
+                <div class="gallery-item">
+
+                    <img
+                        src="photo6.jpg"
+                        alt="Photo de Sandrine">
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INFORMATIONS -->
+    <section>
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Informations</h2>
+
+                <p>
+                    Un contact simple et discret
+                </p>
+
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="info-card">
+
+                    <div class="info-icon">✦</div>
+
+                    <h3>Élégance</h3>
+
+                    <p>
+                        Une présentation soignée
+                        et professionnelle.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-icon">◆</div>
+
+                    <h3>Discrétion</h3>
+
+                    <p>
+                        Le respect de la vie privée
+                        est essentiel.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card">
+
+                    <div class="info-icon">♡</div>
+
+                    <h3>Disponibilité</h3>
+
+                    <p>
+                        Disponible 24h/24.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <div class="contact-box">
+
+            <div class="section-title">
+
+                <h2>Me contacter</h2>
+
+                <p>
+                    Pour toute demande sérieuse
+                </p>
+
+            </div>
+
+
+            <p>
+                Vous pouvez me contacter directement
+                par téléphone ou par e-mail.
+            </p>
+
+
+            <p>
+                <strong>
+                    Téléphone :
+                </strong>
+
+                +33 7 57 82 00 10
+            </p>
+
+
+            <p>
+                <strong>
+                    Email :
+                </strong>
+
+                sandrinep28084@gmail.com
+            </p>
+
+
+            <div class="buttons">
+
+                <a
+                    href="tel:+33757820010"
+                    class="button primary">
+
+                    Appeler
+
+                </a>
+
+
+                <a
+                    href="mailto:sandrinep28084@gmail.com"
+                    class="button secondary">
+
+                    Envoyer un email
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PIED DE PAGE -->
+    <footer>
+
+        <p>
+            © 2026 Sandrine Paris — Tous droits réservés.
+        </p>
+
+        <p style="margin-top:8px;">
+            Profil réservé aux personnes majeures.
+        </p>
+
+    </footer>
 
 </body>
 </html>
