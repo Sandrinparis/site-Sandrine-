@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sandrine Paris | Profil privé</title>
+<title>Sandrine Paris | Rencontres privées entre adultes</title>
 
-<meta name="description" content="Découvrez le profil privé de Sandrine Paris, sa présentation, sa galerie, ses disponibilités et les demandes de réservation.">
+<meta name="description" content="Sandrine Paris - Présentation, galerie, disponibilité et demande de rendez-vous privé entre adultes.">
 
 <style>
 * {
@@ -21,55 +21,50 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #0b0b10;
-    color: #fff;
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
+    background: #0b0b0f;
+    color: #ffffff;
+    line-height: 1.7;
 }
 
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(11,11,16,0.97);
-    border-bottom: 1px solid #292932;
-}
-
-.nav {
-    max-width: 1150px;
-    margin: auto;
-    padding: 16px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: rgba(10,10,14,0.96);
+    border-bottom: 1px solid #29232d;
+    padding: 15px 20px;
 }
 
 .logo {
-    font-size: 23px;
+    text-align: center;
+    font-size: 26px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .logo span {
-    color: #e5a8c8;
+    color: #e5a6c8;
 }
 
-.menu {
+nav {
     display: flex;
-    gap: 20px;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
 }
 
-.menu a {
-    color: #ddd;
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px 10px;
     font-size: 14px;
+    border-radius: 20px;
 }
 
-.menu a:hover {
-    color: #e5a8c8;
+nav a:hover {
+    background: #e5a6c8;
+    color: #111;
 }
 
 /* ACCUEIL */
@@ -80,9 +75,9 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 80px 20px;
+    padding: 50px 20px;
     background:
-        radial-gradient(circle at 50% 15%, #422b3c, #17131a 42%, #0b0b10 75%);
+        radial-gradient(circle at center, #281827 0%, #0b0b0f 65%);
 }
 
 .hero-content {
@@ -91,348 +86,372 @@ header {
 
 .badge {
     display: inline-block;
-    border: 1px solid #e5a8c8;
-    color: #e5a8c8;
+    border: 1px solid #e5a6c8;
+    color: #e5a6c8;
+    padding: 8px 20px;
     border-radius: 30px;
-    padding: 8px 18px;
-    font-size: 12px;
-    letter-spacing: 1.5px;
     margin-bottom: 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .hero h1 {
-    font-size: clamp(48px, 9vw, 86px);
-    line-height: 1;
-    margin-bottom: 25px;
+    font-size: clamp(42px, 9vw, 80px);
+    margin-bottom: 20px;
 }
 
 .hero h1 span {
-    color: #e5a8c8;
+    color: #e5a6c8;
 }
 
-.hero-text {
+.hero p {
     max-width: 700px;
     margin: auto;
-    color: #d0ccd2;
     font-size: 19px;
+    color: #dddddf;
 }
 
 .buttons {
-    margin-top: 30px;
+    margin-top: 35px;
     display: flex;
     justify-content: center;
-    gap: 12px;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 .btn {
     display: inline-block;
-    padding: 14px 25px;
+    text-decoration: none;
+    padding: 14px 28px;
     border-radius: 30px;
-    background: #e5a8c8;
-    color: #171018;
     font-weight: bold;
-    border: none;
-    cursor: pointer;
+    transition: 0.3s;
 }
 
-.btn:hover {
-    background: #f2bfd9;
+.btn-primary {
+    background: #e5a6c8;
+    color: #111;
 }
 
-.btn-outline {
-    background: transparent;
-    color: #fff;
-    border: 1px solid #666;
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    border: 1px solid #e5a6c8;
+    color: #e5a6c8;
+}
+
+.btn-secondary:hover {
+    background: #e5a6c8;
+    color: #111;
 }
 
 /* SECTIONS */
 
 section {
-    padding: 85px 20px;
+    padding: 80px 20px;
 }
 
 .container {
-    max-width: 1150px;
+    max-width: 1100px;
     margin: auto;
 }
 
 .section-title {
     text-align: center;
-    font-size: 38px;
-    margin-bottom: 10px;
+    margin-bottom: 45px;
 }
 
-.section-subtitle {
-    text-align: center;
-    color: #999;
-    max-width: 700px;
-    margin: 0 auto 45px;
+.section-title h2 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.section-title span {
+    color: #e5a6c8;
+}
+
+.section-title p {
+    color: #bcbcc2;
 }
 
 /* A PROPOS */
 
 .about {
-    background: #121219;
+    background: #111116;
 }
 
 .about-grid {
     display: grid;
-    grid-template-columns: 1.2fr .8fr;
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
 
 .card {
-    background: #181820;
-    border: 1px solid #2c2c36;
+    background: #18181f;
+    border: 1px solid #2c2930;
     border-radius: 20px;
     padding: 30px;
 }
 
 .card h3 {
+    color: #e5a6c8;
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 23px;
 }
 
 .card p {
-    color: #c9c7cc;
+    color: #d0d0d5;
 }
 
-.info-list {
-    list-style: none;
-}
+/* ACTIVITES */
 
-.info-list li {
-    padding: 13px 0;
-    border-bottom: 1px solid #2c2c36;
-}
-
-.info-list li:last-child {
-    border-bottom: none;
-}
-
-.info-list strong {
-    color: #e5a8c8;
-}
-
-/* DETAILS */
-
-.details-grid {
+.activities-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    gap: 20px;
 }
 
-.detail {
-    background: #15151c;
-    border: 1px solid #292933;
-    border-radius: 18px;
-    padding: 25px;
+.activity {
     text-align: center;
+    background: #15151b;
+    border-radius: 18px;
+    padding: 30px 20px;
+    border: 1px solid #292630;
 }
 
-.detail h3 {
-    margin-bottom: 8px;
-    color: #e5a8c8;
+.activity .icon {
+    font-size: 35px;
+    margin-bottom: 15px;
 }
 
-.detail p {
-    color: #aaa;
+.activity h3 {
+    color: #e5a6c8;
+    margin-bottom: 10px;
 }
 
 /* GALERIE */
 
+.gallery-section {
+    background: #111116;
+}
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 14px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
 }
 
-.photo-card {
-    aspect-ratio: 3 / 4;
+.gallery-item {
     overflow: hidden;
-    border-radius: 16px;
-    background: #17171e;
-    border: 1px solid #292932;
+    border-radius: 18px;
+    background: #1a1a21;
+    border: 1px solid #302b33;
+    min-height: 300px;
 }
 
-.photo-card img {
+.gallery img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 380px;
     display: block;
-    transition: transform .35s ease;
+    object-fit: cover;
+    transition: transform 0.4s;
 }
 
-.photo-card:hover img {
-    transform: scale(1.05);
+.gallery img:hover {
+    transform: scale(1.03);
 }
 
 /* TARIFS */
 
-.prices {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+.price-table {
+    max-width: 750px;
+    margin: auto;
+    background: #15151b;
+    border: 1px solid #302b33;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
-.price {
-    background: #17171e;
-    border: 1px solid #2b2b35;
-    border-radius: 18px;
-    padding: 22px;
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 25px;
+    border-bottom: 1px solid #302b33;
+}
+
+.price-row:last-child {
+    border-bottom: none;
+}
+
+.price-row span:last-child {
+    color: #e5a6c8;
+    font-weight: bold;
+}
+
+/* DISPONIBILITE */
+
+.availability {
+    background: linear-gradient(135deg, #19131b, #0c0c10);
     text-align: center;
 }
 
-.price h3 {
-    font-size: 17px;
+.availability-box {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #e5a6c8;
+    border-radius: 25px;
 }
 
-.price .amount {
-    color: #e5a8c8;
-    font-size: 26px;
+.status {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: #24202a;
+    color: #e5a6c8;
     font-weight: bold;
-    margin-top: 6px;
 }
 
 /* RESERVATION */
 
-.reservation {
-    background: #121219;
+form {
+    max-width: 750px;
+    margin: auto;
+    background: #15151b;
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid #302b33;
 }
 
-.booking-grid {
-    display: grid;
-    grid-template-columns: .8fr 1.2fr;
-    gap: 25px;
+.form-group {
+    margin-bottom: 20px;
 }
 
-.field {
-    margin-bottom: 16px;
-}
-
-.field label {
+label {
     display: block;
-    color: #bbb;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
+    color: #e5a6c8;
 }
 
-.field input,
-.field select,
-.field textarea {
+input,
+select,
+textarea {
     width: 100%;
-    padding: 13px;
+    padding: 14px;
+    background: #0d0d12;
+    color: white;
+    border: 1px solid #39333d;
     border-radius: 10px;
-    border: 1px solid #3a3a45;
-    background: #0c0c11;
-    color: #fff;
-    font-size: 15px;
+    font-size: 16px;
 }
 
-.field textarea {
-    min-height: 130px;
+textarea {
+    min-height: 150px;
     resize: vertical;
 }
 
-.note {
-    color: #888;
-    font-size: 13px;
-    margin-top: 15px;
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #e5a6c8;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background: #e5a6c8;
+    color: #111;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* CONTACT */
 
 .contact {
+    background: #111116;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
     text-align: center;
+    padding: 30px;
+    background: #18181f;
+    border-radius: 18px;
+    border: 1px solid #2c2930;
 }
 
-.contact-box {
-    max-width: 700px;
-    margin: auto;
+.contact-card h3 {
+    color: #e5a6c8;
+    margin-bottom: 10px;
 }
 
-.contact-line {
-    margin: 10px 0;
-    color: #c8c6ca;
-}
-
-.contact-line strong {
-    color: #e5a8c8;
+.contact-card a {
+    color: white;
+    text-decoration: none;
 }
 
 /* FOOTER */
 
 footer {
-    background: #07070a;
-    border-top: 1px solid #22222a;
     text-align: center;
-    padding: 30px 20px;
-    color: #777;
-    font-size: 13px;
+    padding: 35px 20px;
+    background: #07070a;
+    color: #999;
+    font-size: 14px;
+}
+
+footer strong {
+    color: #e5a6c8;
 }
 
 /* MOBILE */
 
-@media (max-width: 850px) {
-
-    .nav {
-        flex-direction: column;
-        gap: 14px;
-    }
-
-    .menu {
-        justify-content: center;
-        gap: 12px;
-    }
+@media (max-width: 750px) {
 
     .about-grid,
-    .booking-grid {
+    .activities-grid,
+    .contact-grid {
         grid-template-columns: 1fr;
     }
 
-    .details-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .prices {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
-}
 
-@media (max-width: 480px) {
-
-    section {
-        padding: 65px 15px;
+    .gallery img {
+        height: 420px;
     }
 
     .hero {
         min-height: 80vh;
     }
 
-    .hero-text {
-        font-size: 16px;
+    section {
+        padding: 60px 15px;
     }
 
-    .details-grid,
-    .prices {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery {
-        grid-template-columns: 1fr 1fr;
-        gap: 9px;
-    }
-
-    .photo-card {
-        aspect-ratio: 3 / 4;
-    }
-
-    .section-title {
+    .section-title h2 {
         font-size: 31px;
+    }
+
+    .price-row {
+        padding: 16px;
+    }
+
+    form {
+        padding: 25px 18px;
     }
 }
 </style>
@@ -441,23 +460,22 @@ footer {
 <body>
 
 <header>
-    <div class="nav">
 
-        <a href="#accueil" class="logo">
-            Sandrine <span>Paris</span>
-        </a>
+<div class="logo">
+Sandrine <span>Paris</span>
+</div>
 
-        <nav class="menu">
-            <a href="#accueil">Accueil</a>
-            <a href="#details">Détails</a>
-            <a href="#apropos">À propos</a>
-            <a href="#galerie">Galerie</a>
-            <a href="#tarifs">Tarifs</a>
-            <a href="#reservation">Réservation</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<nav>
+<a href="#accueil">Accueil</a>
+<a href="#apropos">À propos</a>
+<a href="#activites">Détails</a>
+<a href="#galerie">Galerie</a>
+<a href="#tarifs">Tarifs</a>
+<a href="#disponibilite">Disponibilité</a>
+<a href="#reservation">Réservation</a>
+<a href="#contact">Contact</a>
+</nav>
 
-    </div>
 </header>
 
 
@@ -465,80 +483,41 @@ footer {
 
 <section class="hero" id="accueil">
 
-    <div class="hero-content">
+<div class="hero-content">
 
-        <div class="badge">
-            PROFIL PRIVÉ · ADULTES
-        </div>
+<div class="badge">
+RENCONTRES PRIVÉES • ADULTES
+</div>
 
-        <h1>
-            Sandrine <span>Paris</span>
-        </h1>
+<h1>
+Sandrine <span>Paris</span>
+</h1>
 
-        <p class="hero-text">
-            Bienvenue sur mon espace privé.
-            Découvrez ma présentation, mes disponibilités,
-            ma galerie et les informations nécessaires
-            avant toute demande de réservation.
-        </p>
+<p>
+Bienvenue sur mon espace personnel. Je privilégie les échanges
+respectueux, la discrétion, la courtoisie et une organisation
+soignée des rencontres privées entre adultes.
+</p>
 
-        <div class="buttons">
+<p style="margin-top:15px;">
+Prenez le temps de découvrir ma présentation, ma galerie,
+mes informations pratiques et les possibilités de me contacter
+pour une demande de rendez-vous.
+</p>
 
-            <a href="#reservation" class="btn">
-                Demander une réservation
-            </a>
+<div class="buttons">
 
-            <a href="#galerie" class="btn btn-outline">
-                Découvrir la galerie
-            </a>
+<a href="#apropos" class="btn btn-primary">
+Découvrir mon univers
+</a>
 
-        </div>
+<a href="#reservation" class="btn btn-secondary">
+Faire une demande
+</a>
 
-    </div>
+</div>
 
-</section>
-
-
-<!-- DETAILS -->
-
-<section id="details">
-
-    <div class="container">
-
-        <h2 class="section-title">
-            Détails
-        </h2>
-
-        <p class="section-subtitle">
-            Quelques informations pratiques.
-        </p>
-
-        <div class="details-grid">
-
-            <div class="detail">
-                <h3>Disponibilité</h3>
-                <p>
-                    Sur réservation et selon mes disponibilités.
-                </p>
-            </div>
-
-            <div class="detail">
-                <h3>Localisation</h3>
-                <p>
-                    Paris et alentours.
-                </p>
-            </div>
-
-            <div class="detail">
-                <h3>Organisation</h3>
-                <p>
-                    Les demandes sont étudiées individuellement.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
@@ -547,180 +526,226 @@ footer {
 
 <section class="about" id="apropos">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            À propos
-        </h2>
+<div class="section-title">
 
-        <p class="section-subtitle">
-            Une présentation claire et professionnelle.
-        </p>
+<h2>À <span>propos</span></h2>
 
-        <div class="about-grid">
+<p>
+Une présentation simple, élégante et discrète.
+</p>
 
-            <div class="card">
+</div>
 
-                <h3>
-                    Bienvenue
-                </h3>
+<div class="about-grid">
 
-                <p>
-                    Merci de visiter mon espace personnel.
-                    Je privilégie les échanges respectueux,
-                    la discrétion et une organisation claire
-                    avant toute rencontre.
-                </p>
+<div class="card">
 
-                <br>
+<h3>Qui suis-je ?</h3>
 
-                <p>
-                    Pour toute demande, utilisez le formulaire
-                    de réservation afin de préciser votre
-                    disponibilité et la durée souhaitée.
-                </p>
+<p>
+Je suis Sandrine. Cet espace a été créé afin de présenter
+mon univers, mes disponibilités et les modalités permettant
+de prendre contact avec moi dans un cadre privé et respectueux.
+</p>
 
-            </div>
+<p style="margin-top:15px;">
+Je privilégie les échanges clairs, la ponctualité,
+la discrétion et le respect mutuel.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Ma philosophie</h3>
+
+<p>
+Chaque demande est étudiée avec attention. Je souhaite que
+les échanges commencent toujours par une communication
+respectueuse et transparente.
+</p>
+
+<p style="margin-top:15px;">
+La confidentialité et le respect des limites de chacun
+restent essentiels dans toute rencontre entre adultes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 
-            <div class="card">
+<!-- DETAILS / ACTIVITES -->
 
-                <h3>
-                    Informations
-                </h3>
+<section id="activites">
 
-                <ul class="info-list">
+<div class="container">
 
-                    <li>
-                        <strong>Ville :</strong>
-                        Paris
-                    </li>
+<div class="section-title">
 
-                    <li>
-                        <strong>Disponibilité :</strong>
-                        Sur réservation
-                    </li>
+<h2>Détails de mon <span>activité</span></h2>
 
-                    <li>
-                        <strong>Réponse :</strong>
-                        Après réception de la demande
-                    </li>
+<p>
+Un espace consacré à la compagnie, aux échanges et aux rencontres privées.
+</p>
 
-                    <li>
-                        <strong>Public :</strong>
-                        Adultes uniquement
-                    </li>
+</div>
 
-                </ul>
+<div class="activities-grid">
 
-            </div>
+<div class="activity">
 
-        </div>
+<div class="icon">✦</div>
 
-    </div>
+<h3>Compagnie</h3>
+
+<p>
+Moments de compagnie dans une atmosphère agréable,
+calme et respectueuse.
+</p>
+
+</div>
+
+<div class="activity">
+
+<div class="icon">◆</div>
+
+<h3>Rencontres privées</h3>
+
+<p>
+Échanges privés entre adultes, organisés dans le respect
+des disponibilités et des limites de chacun.
+</p>
+
+</div>
+
+<div class="activity">
+
+<div class="icon">✓</div>
+
+<h3>Discrétion</h3>
+
+<p>
+Une attention particulière portée à la confidentialité,
+à la ponctualité et au respect mutuel.
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
 <!-- GALERIE -->
 
-<section id="galerie">
+<section class="gallery-section" id="galerie">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Galerie
-        </h2>
+<div class="section-title">
 
-        <p class="section-subtitle">
-            Découvrez les photos disponibles sur le site.
-        </p>
+<h2>Ma <span>Galerie</span></h2>
 
-        <div class="gallery">
+<p>
+Découvrez mes photos.
+</p>
 
-            <div class="photo-card">
-                <img src="photo1.jpg" alt="Sandrine Paris - photo 1">
-            </div>
+</div>
 
-            <div class="photo-card">
-                <img src="photo2.jpg" alt="Sandrine Paris - photo 2">
-            </div>
+<div class="gallery">
 
-            <div class="photo-card">
-                <img src="photo%203.jpg" alt="Sandrine Paris - photo 3">
-            </div>
+<div class="gallery-item">
+<img src="photo1.jpg" alt="Sandrine Paris - Photo 1">
+</div>
 
-            <div class="photo-card">
-                <img src="photo4.jpg" alt="Sandrine Paris - photo 4">
-            </div>
+<div class="gallery-item">
+<img src="photo2.jpg" alt="Sandrine Paris - Photo 2">
+</div>
 
-            <div class="photo-card">
-                <img src="photo%205.jpg" alt="Sandrine Paris - photo 5">
-            </div>
+<div class="gallery-item">
+<img src="photo 3.jpg" alt="Sandrine Paris - Photo 3">
+</div>
 
-            <div class="photo-card">
-                <img src="photo6.jpg" alt="Sandrine Paris - photo 6">
-            </div>
+<div class="gallery-item">
+<img src="photo4.jpg" alt="Sandrine Paris - Photo 4">
+</div>
 
-            <div class="photo-card">
-                <img src="photo7.jpg" alt="Sandrine Paris - photo 7">
-            </div>
+<div class="gallery-item">
+<img src="photo 5.jpg" alt="Sandrine Paris - Photo 5">
+</div>
 
-            <div class="photo-card">
-                <img src="photo8.jpg" alt="Sandrine Paris - photo 8">
-            </div>
+<div class="gallery-item">
+<img src="photo6.jpg" alt="Sandrine Paris - Photo 6">
+</div>
 
-            <div class="photo-card">
-                <img src="photo9.jpg" alt="Sandrine Paris - photo 9">
-            </div>
+<div class="gallery-item">
+<img src="photo7.jpg" alt="Sandrine Paris - Photo 7">
+</div>
 
-            <div class="photo-card">
-                <img src="photo10.jpg" alt="Sandrine Paris - photo 10">
-            </div>
+<div class="gallery-item">
+<img src="photo 8.jpg" alt="Sandrine Paris - Photo 8">
+</div>
 
-            <div class="photo-card">
-                <img src="photo11.jpg" alt="Sandrine Paris - photo 11">
-            </div>
+<div class="gallery-item">
+<img src="photo 9.jpg" alt="Sandrine Paris - Photo 9">
+</div>
 
-            <div class="photo-card">
-                <img src="photo12.jpg" alt="Sandrine Paris - photo 12">
-            </div>
+<div class="gallery-item">
+<img src="photo 10.jpg" alt="Sandrine Paris - Photo 10">
+</div>
 
-            <div class="photo-card">
-                <img src="photo13.jpg" alt="Sandrine Paris - photo 13">
-            </div>
+<div class="gallery-item">
+<img src="photo 11.jpg" alt="Sandrine Paris - Photo 11">
+</div>
 
-            <div class="photo-card">
-                <img src="photo14.jpg" alt="Sandrine Paris - photo 14">
-            </div>
+<div class="gallery-item">
+<img src="photo 12.jpg" alt="Sandrine Paris - Photo 12">
+</div>
 
-            <div class="photo-card">
-                <img src="photo15.jpg" alt="Sandrine Paris - photo 15">
-            </div>
+<div class="gallery-item">
+<img src="photo 13.png" alt="Sandrine Paris - Photo 13">
+</div>
 
-            <div class="photo-card">
-                <img src="photo16.jpg" alt="Sandrine Paris - photo 16">
-            </div>
+<div class="gallery-item">
+<img src="photo 14.jpg" alt="Sandrine Paris - Photo 14">
+</div>
 
-            <div class="photo-card">
-                <img src="photo17.jpg" alt="Sandrine Paris - photo 17">
-            </div>
+<div class="gallery-item">
+<img src="photo 15.jpg" alt="Sandrine Paris - Photo 15">
+</div>
 
-            <div class="photo-card">
-                <img src="photo18.jpg" alt="Sandrine Paris - photo 18">
-            </div>
+<div class="gallery-item">
+<img src="photo 16.jpg" alt="Sandrine Paris - Photo 16">
+</div>
 
-            <div class="photo-card">
-                <img src="photo19.jpg" alt="Sandrine Paris - photo 19">
-            </div>
+<div class="gallery-item">
+<img src="photo 17.jpg" alt="Sandrine Paris - Photo 17">
+</div>
 
-            <div class="photo-card">
-                <img src="photo20.jpg" alt="Sandrine Paris - photo 20">
-            </div>
+<div class="gallery-item">
+<img src="photo 18.jpg" alt="Sandrine Paris - Photo 18">
+</div>
 
-        </div>
+<div class="gallery-item">
+<img src="photo 19.jpg" alt="Sandrine Paris - Photo 19">
+</div>
 
-    </div>
+<div class="gallery-item">
+<img src="photo 20.jpg" alt="Sandrine Paris - Photo 20">
+</div>
+
+</div>
+
+</div>
 
 </section>
 
@@ -729,310 +754,278 @@ footer {
 
 <section id="tarifs">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Tarifs
-        </h2>
+<div class="section-title">
 
-        <p class="section-subtitle">
-            Tarifs indicatifs à confirmer lors de la demande.
-        </p>
+<h2>Informations <span>tarifaires</span></h2>
 
-        <div class="prices">
+<p>
+Informations pratiques concernant les différentes formules de disponibilité.
+</p>
 
-            <div class="price">
-                <h3>1 heure</h3>
-                <div class="amount">100 €</div>
-            </div>
+</div>
 
-            <div class="price">
-                <h3>2 heures</h3>
-                <div class="amount">150 €</div>
-            </div>
+<div class="price-table">
 
-            <div class="price">
-                <h3>3 heures</h3>
-                <div class="amount">200 €</div>
-            </div>
+<div class="price-row">
+<span>1 heure</span>
+<span>100 €</span>
+</div>
 
-            <div class="price">
-                <h3>4 heures</h3>
-                <div class="amount">250 €</div>
-            </div>
+<div class="price-row">
+<span>2 heures</span>
+<span>150 €</span>
+</div>
 
-            <div class="price">
-                <h3>Journée</h3>
-                <div class="amount">600 €</div>
-            </div>
+<div class="price-row">
+<span>3 heures</span>
+<span>200 €</span>
+</div>
 
-            <div class="price">
-                <h3>Nuit</h3>
-                <div class="amount">500 €</div>
-            </div>
+<div class="price-row">
+<span>4 heures</span>
+<span>250 €</span>
+</div>
 
-            <div class="price">
-                <h3>Week-end</h3>
-                <div class="amount">850 €</div>
-            </div>
+<div class="price-row">
+<span>Journée</span>
+<span>600 €</span>
+</div>
 
-            <div class="price">
-                <h3>Semaine</h3>
-                <div class="amount">1 500 €</div>
-            </div>
+<div class="price-row">
+<span>Nuit</span>
+<span>500 €</span>
+</div>
 
-        </div>
+<div class="price-row">
+<span>Week-end</span>
+<span>850 €</span>
+</div>
 
-    </div>
+<div class="price-row">
+<span>Semaine</span>
+<span>1 500 €</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DISPONIBILITE -->
+
+<section class="availability" id="disponibilite">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Ma <span>disponibilité</span></h2>
+
+</div>
+
+<div class="availability-box">
+
+<h3>Disponibilité sur demande</h3>
+
+<div class="status">
+24h / 24 — 7j / 7
+</div>
+
+<p>
+Les disponibilités peuvent varier selon les rendez-vous déjà
+programmés. Une demande préalable est donc recommandée.
+</p>
+
+<div class="buttons">
+
+<a href="#reservation" class="btn btn-primary">
+Vérifier une disponibilité
+</a>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
 <!-- RESERVATION -->
 
-<section class="reservation" id="reservation">
+<section id="reservation">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Demande de réservation
-        </h2>
+<div class="section-title">
 
-        <p class="section-subtitle">
-            Remplissez le formulaire pour préparer votre demande.
-        </p>
+<h2>Demande de <span>réservation</span></h2>
 
-        <div class="booking-grid">
+<p>
+Utilisez ce formulaire pour envoyer une demande.
+</p>
 
-            <div class="card">
+</div>
 
-                <h3>
-                    Avant votre demande
-                </h3>
+<form action="mailto:votre-email@example.com"
+method="post"
+enctype="text/plain">
 
-                <br>
+<div class="form-group">
 
-                <p>
-                    Indiquez votre prénom, votre adresse email,
-                    la durée souhaitée et vos disponibilités.
-                </p>
+<label for="nom">
+Nom ou prénom
+</label>
 
-                <br>
+<input
+type="text"
+id="nom"
+name="Nom"
+placeholder="Votre nom"
+required>
 
-                <p>
-                    Votre demande sera préparée dans votre
-                    application email afin que vous puissiez
-                    vérifier son contenu avant de l'envoyer.
-                </p>
+</div>
 
-                <p class="note">
-                    Aucune information bancaire n'est demandée
-                    par ce formulaire.
-                </p>
+<div class="form-group">
 
-            </div>
+<label for="email">
+Adresse e-mail
+</label>
 
+<input
+type="email"
+id="email"
+name="Email"
+placeholder="votre@email.com"
+required>
 
-            <form class="card" onsubmit="preparerReservation(event)">
+</div>
 
-                <div class="field">
+<div class="form-group">
 
-                    <label for="nom">
-                        Prénom
-                    </label>
+<label for="date">
+Date souhaitée
+</label>
 
-                    <input
-                        type="text"
-                        id="nom"
-                        required
-                        placeholder="Votre prénom"
-                    >
+<input
+type="date"
+id="date"
+name="Date souhaitée"
+required>
 
-                </div>
+</div>
 
+<div class="form-group">
 
-                <div class="field">
+<label for="duree">
+Durée souhaitée
+</label>
 
-                    <label for="email">
-                        Email
-                    </label>
+<select id="duree" name="Durée">
 
-                    <input
-                        type="email"
-                        id="email"
-                        required
-                        placeholder="votre@email.com"
-                    >
+<option>1 heure</option>
+<option>2 heures</option>
+<option>3 heures</option>
+<option>4 heures</option>
+<option>Journée</option>
+<option>Nuit</option>
+<option>Week-end</option>
+<option>Semaine</option>
 
-                </div>
+</select>
 
+</div>
 
-                <div class="field">
+<div class="form-group">
 
-                    <label for="duree">
-                        Durée souhaitée
-                    </label>
+<label for="message">
+Message
+</label>
 
-                    <select id="duree">
+<textarea
+id="message"
+name="Message"
+placeholder="Présentez brièvement votre demande..."
+required></textarea>
 
-                        <option value="1 heure">
-                            1 heure — 100 €
-                        </option>
+</div>
 
-                        <option value="2 heures">
-                            2 heures — 150 €
-                        </option>
+<button type="submit">
+Envoyer ma demande
+</button>
 
-                        <option value="3 heures">
-                            3 heures — 200 €
-                        </option>
+</form>
 
-                        <option value="4 heures">
-                            4 heures — 250 €
-                        </option>
-
-                        <option value="Journée">
-                            Journée — 600 €
-                        </option>
-
-                        <option value="Nuit">
-                            Nuit — 500 €
-                        </option>
-
-                        <option value="Week-end">
-                            Week-end — 850 €
-                        </option>
-
-                        <option value="Semaine">
-                            Semaine — 1 500 €
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="field">
-
-                    <label for="date">
-                        Date souhaitée
-                    </label>
-
-                    <input
-                        type="date"
-                        id="date"
-                    >
-
-                </div>
-
-
-                <div class="field">
-
-                    <label for="message">
-                        Message
-                    </label>
-
-                    <textarea
-                        id="message"
-                        placeholder="Indiquez vos disponibilités et toute information utile..."
-                    ></textarea>
-
-                </div>
-
-
-                <button
-                    type="submit"
-                    class="btn"
-                >
-                    Préparer ma demande
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
 <!-- CONTACT -->
 
-<section id="contact">
+<section class="contact" id="contact">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="section-title">
-            Contact
-        </h2>
+<div class="section-title">
 
-        <p class="section-subtitle">
-            Pour toute question ou demande d'information.
-        </p>
+<h2>Me <span>contacter</span></h2>
 
-        <div class="contact-box">
+<p>
+Pour toute demande d'information ou de rendez-vous.
+</p>
 
-            <p class="contact-line">
-                <strong>Téléphone :</strong>
-                +33 7 57 82 00 10
-            </p>
+</div>
 
-            <p class="contact-line">
-                <strong>Email :</strong>
-                sandrinep28084@gmail.com
-            </p>
+<div class="contact-grid">
 
-            <div class="buttons">
+<div class="contact-card">
 
-                <a
-                    class="btn"
-                    href="tel:+33757820010"
-                >
-                    Appeler
-                </a>
+<h3>E-mail</h3>
 
-                <a
-                    class="btn btn-outline"
-                    href="mailto:sandrinep28084@gmail.com"
-                >
-                    Envoyer un email
-                </a>
+<p>
+<a href="mailto:votre-email@example.com">
+votre-email@example.com
+</a>
+</p>
 
-            </div>
+</div>
 
-        </div>
+<div class="contact-card">
 
-    </div>
+<h3>Disponibilité</h3>
+
+<p>
+24h/24 et 7j/7 sur demande,
+selon les rendez-vous déjà programmés.
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-<!-- PIED DE PAGE -->
+<!-- FOOTER -->
 
 <footer>
 
-    <p>
-        © 2026 Sandrine Paris — Tous droits réservés.
-    </p>
+<p>
+© 2026 <strong>Sandrine Paris</strong> — Tous droits réservés.
+</p>
 
-    <p>
-        Site réservé aux adultes.
-    </p>
+<p style="margin-top:8px;">
+Rencontres privées entre adultes • Discrétion • Respect
+</p>
 
 </footer>
 
-
-<script>
-
-function preparerReservation(event) {
-
-    event.preventDefault();
-
-    const nom =
-        document.getElementById("nom").value.trim();
-
-    const email =
-        document.getElementById("email").value.trim();
-
-    const duree =
-        document.getElementById("
+</body>
+    </html>
